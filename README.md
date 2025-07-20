@@ -1,5 +1,9 @@
 # Claude Code Notebook MCP
 
+[![GitHub stars](https://img.shields.io/github/stars/mstampfer/claude-code-notebook-mcp)](https://github.com/mstampfer/claude-code-notebook-mcp/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/mstampfer/claude-code-notebook-mcp)](https://github.com/mstampfer/claude-code-notebook-mcp/network)
+[![GitHub downloads](https://img.shields.io/github/downloads/mstampfer/claude-code-notebook-mcp/total)](https://github.com/mstampfer/claude-code-notebook-mcp/releases)
+
 A Model Context Protocol (MCP) server that provides comprehensive Jupyter notebook interaction capabilities, compatible with Claude Code.
 
 > **Note**: This library emulates the functionality of the [cursor-notebook-mcp](https://github.com/jbeno/cursor-notebook-mcp) repository but runs in a web browser. For live updates in Jupyter, install the collaboration extension:
