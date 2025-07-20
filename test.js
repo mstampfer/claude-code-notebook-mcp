@@ -49,7 +49,7 @@ async function runTest() {
     await fs.remove(testNotebookPath);
     console.log('✓ Test notebook removed');
 
-    console.log('\n🎉 All tests passed! Jupyter MCP Gateway is working correctly.');
+    console.log('\n🎉 All tests passed! Claude Code Notebook MCP is working correctly.');
     
     process.exit(0);
   } catch (error) {

@@ -14,7 +14,7 @@ class JupyterMCPServer {
   constructor() {
     this.server = new Server(
       {
-        name: "jupyter-mcp-gateway",
+        name: "claude-code-notebook-mcp",
         version: "1.0.0",
       },
       {

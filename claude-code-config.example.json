@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "jupyter": {
+      "command": "node",
+      "args": ["src/server.js"],
+      "cwd": "/path/to/claude-code-notebook-mcp"
+    }
+  }
+}

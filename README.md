@@ -1,4 +1,4 @@
-# Jupyter MCP Gateway
+# Claude Code Notebook MCP
 
 A Model Context Protocol (MCP) server that provides comprehensive Jupyter notebook interaction capabilities, compatible with Claude Code.
 
@@ -71,7 +71,7 @@ npm install
 
 1. Navigate to the project directory:
 ```bash
-cd /path/to/jupyter-mcp-gateway
+cd /path/to/claude-code-notebook-mcp
 ```
 
 2. Add the MCP server:
@@ -86,27 +86,36 @@ claude mcp list
 
 #### Option 2: Manual Configuration
 
-1. Create a `.mcp.json` file in your project root:
+1. Copy the example configuration file and customize it:
+```bash
+# For project-specific configuration
+cp .mcp.example.json .mcp.json
+
+# Or for Claude Code configuration
+cp claude-code-config.example.json claude-code-config.json
+```
+
+2. Edit the configuration file and update the `cwd` path to your project location:
 ```json
 {
   "mcpServers": {
     "jupyter": {
       "command": "node",
       "args": ["src/server.js"],
-      "env": {}
+      "cwd": "/your/actual/path/to/claude-code-notebook-mcp"
     }
   }
 }
 ```
 
-2. Or add to your user settings at `~/.claude/settings.json`:
+3. For user-wide settings, add to `~/.claude/settings.json`:
 ```json
 {
   "mcpServers": {
     "jupyter": {
       "command": "node",
       "args": ["src/server.js"],
-      "cwd": "/path/to/jupyter-mcp-gateway"
+      "cwd": "/path/to/claude-code-notebook-mcp"
     }
   }
 }
